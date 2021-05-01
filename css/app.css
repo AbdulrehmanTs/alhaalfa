@@ -497,7 +497,10 @@ button {
     box-sizing: border-box;
     margin-top: 4px;
     opacity: 0;
-    overflow: hidden;
+    /*this line added manually*/
+    overflow: scroll;
+    height: 500%;
+    /*this line added manually*/
     padding: 0;
     pointer-events: none;
     position: absolute;
@@ -515,8 +518,11 @@ button {
     z-index: 9;
 }
 
-.nice-select .list:hover .option:not(:hover) {
-    background-color: transparent !important;
+
+/*this is added manually*/
+
+.nice-select .list::-webkit-scrollbar {
+    display: none;
 }
 
 .nice-select .option {
