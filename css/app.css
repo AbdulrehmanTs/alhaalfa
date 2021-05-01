@@ -2760,6 +2760,10 @@ body.dark .breadcrumbs__item:not(:last-child):after {
     pointer-events: none;
 }
 
+.rounded-pill {
+    border-radius: 50rem !important;
+}
+
 .card__status_sale {
     background: #FF0000;
 }
