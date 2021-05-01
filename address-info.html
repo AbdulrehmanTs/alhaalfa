@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <title>Address Info</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.alhaalfa.com/wp-content/uploads/2019/08/cropped-logo-512x512-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.alhaalfa.com/wp-content/uploads/2019/08/cropped-logo-512x512-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.alhaalfa.com/wp-content/uploads/2019/08/cropped-logo-512x512-180x180.png">
+    <link rel="manifest" href="img/site.html">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="Hygge HTML Templates" content="">
+    <meta name="description" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@alhaalfa">
+    <meta name="twitter:title" content="Alha Alfa Cosmetics">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@alhaalfa">
+    <meta name="twitter:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="fb:admins" content="">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" href="order-history.css">
+    <link rel="stylesheet" media="all" href="https://fontawesome.com/css/app.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/phone.css">
+
+    <script>
+        var viewportmeta = document.querySelector('meta[name="viewport"]');
+        if (viewportmeta) {
+            if (screen.width < 375) {
+                var newScale = screen.width / 375;
+                viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+            } else {
+                viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- page-->
+    <div class="page">
+        <header class="header js-header">
+            <div class="header__center center"><button class="header__burger js-header-burger"></button>
+                <a class="header__logo" href="index.html">
+                    <img class="header__pic header__pic_black-desktop" src="cropped-logo-alha-alfa-cosmetics-2020-300x67.png" alt="">
+                    <img class="header__pic header__pic_white-desktop" src="" alt="">
+                    <img class="header__pic header__pic_black-mobile" src="cropped-logo-alha-alfa-cosmetics-2020-300x67.png" alt="" style="width: 200px;">
+                    <img class="header__pic header__pic_white-mobile" src="" alt="" style="width: 200px;"></a>
+                <div class="header__control">
+                    <div class="header__item header__item_hidden">
+                        <div class="header__search search js-search">
+                            <div class="search__wrap"><input class="search__input" type="text" placeholder="Find something here"></div><button class="search__btn js-search-btn"><svg class="icon icon-search">
+                                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                                </svg></button>
+                        </div>
+                    </div>
+                    <div class="header__item"><a class="header__link header__link_cart active" href="cart.html"><svg
+                                class="icon icon-cart">
+                                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                            </svg></a>
+
+                        <div class="header__body">
+                            <div class="basket basket_header">
+
+                                <!--  /// NO PRODUCT IN CART -->
+                                <!--                                 
+                                <div class="basket__details"><a class="basket__product">No Product Was Found</a>
+                                </div>
+                                -->
+                                <!--  /// NO PRODUCT IN CART -->
+
+
+
+                                <!--  /// PRODUCT IN CART -->
+
+                                <div class="basket__list">
+                                    <div class="basket__item">
+                                        <a class="basket__preview" href="#"><img class="basket__pic" src="https://www.alhaalfa.com/wp-content/uploads/2021/01/IMGM1344-scaled.jpg" alt=""></a>
+                                        <div class="basket__details"><a class="basket__product" href="#">Eyeshadow Pallete</a>
+                                            <div class="basket__price">
+                                                <div class="basket__old">RM60.00</div>
+                                                <div class="basket__actual">RM24.00</div>
+                                            </div>
+                                        </div><button class="basket__remove"><svg class="icon icon-close">
+                          <use xlink:href="img/sprite.svg#icon-close"></use>
+                        </svg></button>
+                                    </div>
+                                    <div class="basket__item">
+                                        <a class="basket__preview" href="#"><img class="basket__pic" src="https://www.alhaalfa.com/wp-content/uploads/2021/01/IMGM1344-scaled.jpg" alt=""></a>
+                                        <div class="basket__details"><a class="basket__product" href="#">Eyeshadow Pallete</a>
+                                            <div class="basket__price">
+                                                <div class="basket__actual">RM50.00</div>
+                                            </div>
+                                        </div><button class="basket__remove"><svg class="icon icon-close">
+                          <use xlink:href="img/sprite.svg#icon-close"></use>
+                        </svg></button>
+                                    </div>
+                                </div>
+                                <div class="basket__total">
+                                    <div class="basket__text">Total:</div>
+                                    <div class="basket__text">$201</div>
+                                </div>
+                                <div class="basket__btns"><a class="basket__btn btn btn_green" href="checkout.html">Checkout </a><a class="basket__btn btn btn_border" href="cart.html">Edit Cart</a>
+                                </div>
+
+                                <!--  /// NO PRODUCT IN CART -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="header__item header__item_hidden"><a class="header__link" href=""><svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg></a>
+                        <!-- <div class="header__body">
+                            <div class="basket basket_header">
+                                <div class="basket__total" style="margin-bottom: 0px;">
+                                    <div class="basket__text">
+                                        <p style="margin-bottom: 10px;">You are currently not logged in:</p>
+                                        <div class="login__row">
+                                            <div class="login__col"><a href="sign-up.html"><button class="login__btn btn btn_green btn_wide">Create Account</button></a></div>
+                                            <p>OR</p>
+                                            <div class="login__col"><a class="login__btn btn btn_border btn_wide" href="login.html">Login</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="header__body">
+                            <div class="basket basket_header">
+                                <div class="basket__total" style="margin-bottom: 0px;">
+                                    <div class="basket__text">
+
+                                        <a class="user-popup-items" href="address-info.html">
+                                            <img src="product-1.png" alt="logo" width="40em" height="40em">
+                                            <p style="margin-bottom: 10px;">User Name <span class="user_pending">pending</span></p>
+                                        </a>
+
+                                        <a class="user-popup-items" href="order-history.html">
+                                            <i class="fas fa-history"></i>
+                                            <p style="margin-bottom: 10px;">Order history</p>
+                                        </a>
+
+                                        <a class="user-popup-items" href="address-info.html">
+                                            <i class="fas fa-save"></i>
+                                            <p style="margin-bottom: 10px;">RMO</p>
+                                        </a>
+
+                                        <a class="user-popup-items" href="order-history.html">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <p style="margin-bottom: 10px;">LOG OUT</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="header__menu menu js-menu">
+                <div class="menu__center center">
+                    <form class="menu__search search">
+                        <div class="search__wrap"><input class="search__input" type="text" placeholder="Search"></div>
+                        <button class="search__btn"><svg class="icon icon-search">
+                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                            </svg></button>
+                    </form>
+                    <div class="menu__container">
+                        <div class="menu__list js-menu-list">
+                            <a class="menu__item active" href="index.html">Home</a>
+                            <a class="menu__item" href="#">Promotion</a>
+                            <a class="menu__item" href="#">Makeup Set</a>
+                            <a class="menu__item" href="category.html">Shop</a>
+                            <a class="menu__item" href="#">Tutorial</a>
+                            <a class="menu__item" href="#">Outlets</a>
+
+                            <div class="menu__item js-menu-item">
+                                <div class="menu__head js-menu-head">Stockist<svg class="icon icon-arrow-next">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-next"></use>
+                                    </svg></div>
+
+                                <div class="menu__body js-menu-body">
+                                    <button class="menu__close js-menu-close">
+                                        <svg class="icon icon-close">
+                                            <use xlink:href="img/sprite.svg#icon-close">
+                                            </use>
+                                        </svg>
+                                    </button>
+
+                                    <button class="menu__back js-menu-back">
+                                        <svg class="icon icon-arrow-prev">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-prev"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="menu__group">
+                                        <a class="menu__link" href="category.html">Malaysia</a>
+                                        <a class="menu__link" href="category.html">Singapore</a>
+                                        <a class="menu__link" href="category.html">Indonesia</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="switch js-switch-bg"><input class="switch__input" type="checkbox" /><span
+                                    class="switch__in"><span class="switch__tick"><img
+                                            class="switch__pic switch__pic_moon" src="img/moon.svg" alt="" /><img
+                                            class="switch__pic switch__pic_sun" src="img/sun.svg"
+                                            alt="" /></span></span></label>
+                        </div>
+                    </div>
+
+                    <!--
+                    <a class="menu__btn btn btn_green btn_wide" href="login.html">Login</a>
+                    <div class="menu__social"><a class="menu__link" href="https://www.instagram.com/ui8net/" target="_blank"><svg class="icon icon-instagram">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg></a><a class="menu__link" href="https://twitter.com/ui8" target="_blank"><svg class="icon icon-twitter">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg></a><a class="menu__link" href="https://www.facebook.com/ui8.net/" target="_blank"><svg class="icon icon-facebook">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg></a></div>
+                    -->
+
+                </div>
+            </div>
+        </header>
+
+
+        <!-- addres info body -->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__center center">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Home Page</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Categories</a></li>
+                    <li class="breadcrumbs__item">Addres Info</li>
+                </ul>
+            </div>
+        </div>
+        <div class="login section">
+            <div class="login__details">
+                <div class="login__center center">
+                    <div class="login__stage stage">- Your information</div>
+                    <h2 class="login__title title title_mb-lg">Add or Update your Information</h2>
+                    <form class="login__form">
+                        <div class="login__wrap">
+                            <div class="login__status success"></div>
+
+                            <div class="checkout__line">
+                                <div class="checkout__cell">
+                                    <div class="checkout__field field">
+                                        <div class="field__label">First Name</div>
+                                        <div class="field__wrap"><input class="field__input" type="text" name="first-name" placeholder="First Name"></div>
+                                    </div>
+                                </div>
+                                <div class="checkout__cell">
+                                    <div class="checkout__field field">
+                                        <div class="field__label">Last Name</div>
+                                        <div class="field__wrap"><input class="field__input" type="text" name="last-name" placeholder="Last Name"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">Email Address</div>
+                                <div class="field__wrap"><input class="field__input" type="text" name="email-address" placeholder="Email"></div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">Company Name</div>
+                                <div class="field__wrap"><input class="field__input" type="text" name="company-name" placeholder="Company Name"></div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">Country/Region</div>
+                                <div class="field__wrap counry-field-style">
+                                    <select name="country/region" class="field__input">
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Åland Islands">Åland Islands</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
+                                        <option value="American Samoa">American Samoa</option>
+                                        <option value="Andorra">Andorra</option>
+                                        <option value="Angola">Angola</option>
+                                        <option value="Anguilla">Anguilla</option>
+                                        <option value="Antarctica">Antarctica</option>
+                                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Armenia">Armenia</option>
+                                        <option value="Aruba">Aruba</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Austria">Austria</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="Bahamas">Bahamas</option>
+                                        <option value="Bahrain">Bahrain</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Barbados">Barbados</option>
+                                        <option value="Belarus">Belarus</option>
+                                        <option value="Belgium">Belgium</option>
+                                        <option value="Belize">Belize</option>
+                                        <option value="Benin">Benin</option>
+                                        <option value="Bermuda">Bermuda</option>
+                                        <option value="Bhutan">Bhutan</option>
+                                        <option value="Bolivia">Bolivia</option>
+                                        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                        <option value="Botswana">Botswana</option>
+                                        <option value="Bouvet Island">Bouvet Island</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                        <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                        <option value="Bulgaria">Bulgaria</option>
+                                        <option value="Burkina Faso">Burkina Faso</option>
+                                        <option value="Burundi">Burundi</option>
+                                        <option value="Cambodia">Cambodia</option>
+                                        <option value="Cameroon">Cameroon</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cape Verde">Cape Verde</option>
+                                        <option value="Cayman Islands">Cayman Islands</option>
+                                        <option value="Central African Republic">Central African Republic</option>
+                                        <option value="Chad">Chad</option>
+                                        <option value="Chile">Chile</option>
+                                        <option value="China">China</option>
+                                        <option value="Christmas Island">Christmas Island</option>
+                                        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                        <option value="Colombia">Colombia</option>
+                                        <option value="Comoros">Comoros</option>
+                                        <option value="Congo">Congo</option>
+                                        <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                                        <option value="Cook Islands">Cook Islands</option>
+                                        <option value="Costa Rica">Costa Rica</option>
+                                        <option value="Cote D'ivoire">Cote D'ivoire</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Cuba">Cuba</option>
+                                        <option value="Cyprus">Cyprus</option>
+                                        <option value="Czech Republic">Czech Republic</option>
+                                        <option value="Denmark">Denmark</option>
+                                        <option value="Djibouti">Djibouti</option>
+                                        <option value="Dominica">Dominica</option>
+                                        <option value="Dominican Republic">Dominican Republic</option>
+                                        <option value="Ecuador">Ecuador</option>
+                                        <option value="Egypt">Egypt</option>
+                                        <option value="El Salvador">El Salvador</option>
+                                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                        <option value="Eritrea">Eritrea</option>
+                                        <option value="Estonia">Estonia</option>
+                                        <option value="Ethiopia">Ethiopia</option>
+                                        <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                        <option value="Faroe Islands">Faroe Islands</option>
+                                        <option value="Fiji">Fiji</option>
+                                        <option value="Finland">Finland</option>
+                                        <option value="France">France</option>
+                                        <option value="French Guiana">French Guiana</option>
+                                        <option value="French Polynesia">French Polynesia</option>
+                                        <option value="French Southern Territories">French Southern Territories</option>
+                                        <option value="Gabon">Gabon</option>
+                                        <option value="Gambia">Gambia</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="Ghana">Ghana</option>
+                                        <option value="Gibraltar">Gibraltar</option>
+                                        <option value="Greece">Greece</option>
+                                        <option value="Greenland">Greenland</option>
+                                        <option value="Grenada">Grenada</option>
+                                        <option value="Guadeloupe">Guadeloupe</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Guatemala">Guatemala</option>
+                                        <option value="Guernsey">Guernsey</option>
+                                        <option value="Guinea">Guinea</option>
+                                        <option value="Guinea-bissau">Guinea-bissau</option>
+                                        <option value="Guyana">Guyana</option>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                        <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                        <option value="Honduras">Honduras</option>
+                                        <option value="Hong Kong">Hong Kong</option>
+                                        <option value="Hungary">Hungary</option>
+                                        <option value="Iceland">Iceland</option>
+                                        <option value="India">India</option>
+                                        <option value="Indonesia">Indonesia</option>
+                                        <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                        <option value="Iraq">Iraq</option>
+                                        <option value="Ireland">Ireland</option>
+                                        <option value="Isle of Man">Isle of Man</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Italy">Italy</option>
+                                        <option value="Jamaica">Jamaica</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Jersey">Jersey</option>
+                                        <option value="Jordan">Jordan</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Kenya">Kenya</option>
+                                        <option value="Kiribati">Kiribati</option>
+                                        <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                        <option value="Korea, Republic of">Korea, Republic of</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                        <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                        <option value="Latvia">Latvia</option>
+                                        <option value="Lebanon">Lebanon</option>
+                                        <option value="Lesotho">Lesotho</option>
+                                        <option value="Liberia">Liberia</option>
+                                        <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                        <option value="Liechtenstein">Liechtenstein</option>
+                                        <option value="Lithuania">Lithuania</option>
+                                        <option value="Luxembourg">Luxembourg</option>
+                                        <option value="Macao">Macao</option>
+                                        <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                                        <option value="Madagascar">Madagascar</option>
+                                        <option value="Malawi">Malawi</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Maldives">Maldives</option>
+                                        <option value="Mali">Mali</option>
+                                        <option value="Malta">Malta</option>
+                                        <option value="Marshall Islands">Marshall Islands</option>
+                                        <option value="Martinique">Martinique</option>
+                                        <option value="Mauritania">Mauritania</option>
+                                        <option value="Mauritius">Mauritius</option>
+                                        <option value="Mayotte">Mayotte</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                        <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                        <option value="Monaco">Monaco</option>
+                                        <option value="Mongolia">Mongolia</option>
+                                        <option value="Montenegro">Montenegro</option>
+                                        <option value="Montserrat">Montserrat</option>
+                                        <option value="Morocco">Morocco</option>
+                                        <option value="Mozambique">Mozambique</option>
+                                        <option value="Myanmar">Myanmar</option>
+                                        <option value="Namibia">Namibia</option>
+                                        <option value="Nauru">Nauru</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="Netherlands">Netherlands</option>
+                                        <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                        <option value="New Caledonia">New Caledonia</option>
+                                        <option value="New Zealand">New Zealand</option>
+                                        <option value="Nicaragua">Nicaragua</option>
+                                        <option value="Niger">Niger</option>
+                                        <option value="Nigeria">Nigeria</option>
+                                        <option value="Niue">Niue</option>
+                                        <option value="Norfolk Island">Norfolk Island</option>
+                                        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                        <option value="Norway">Norway</option>
+                                        <option value="Oman">Oman</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Palau">Palau</option>
+                                        <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Papua New Guinea">Papua New Guinea</option>
+                                        <option value="Paraguay">Paraguay</option>
+                                        <option value="Peru">Peru</option>
+                                        <option value="Philippines">Philippines</option>
+                                        <option value="Pitcairn">Pitcairn</option>
+                                        <option value="Poland">Poland</option>
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Puerto Rico">Puerto Rico</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Reunion">Reunion</option>
+                                        <option value="Romania">Romania</option>
+                                        <option value="Russian Federation">Russian Federation</option>
+                                        <option value="Rwanda">Rwanda</option>
+                                        <option value="Saint Helena">Saint Helena</option>
+                                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                        <option value="Saint Lucia">Saint Lucia</option>
+                                        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                        <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                                        <option value="Samoa">Samoa</option>
+                                        <option value="San Marino">San Marino</option>
+                                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                        <option value="Saudi Arabia">Saudi Arabia</option>
+                                        <option value="Senegal">Senegal</option>
+                                        <option value="Serbia">Serbia</option>
+                                        <option value="Seychelles">Seychelles</option>
+                                        <option value="Sierra Leone">Sierra Leone</option>
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Slovakia">Slovakia</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Solomon Islands">Solomon Islands</option>
+                                        <option value="Somalia">Somalia</option>
+                                        <option value="South Africa">South Africa</option>
+                                        <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                                        <option value="Spain">Spain</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="Sudan">Sudan</option>
+                                        <option value="Suriname">Suriname</option>
+                                        <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                        <option value="Swaziland">Swaziland</option>
+                                        <option value="Sweden">Sweden</option>
+                                        <option value="Switzerland">Switzerland</option>
+                                        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                        <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                        <option value="Tajikistan">Tajikistan</option>
+                                        <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Timor-leste">Timor-leste</option>
+                                        <option value="Togo">Togo</option>
+                                        <option value="Tokelau">Tokelau</option>
+                                        <option value="Tonga">Tonga</option>
+                                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                        <option value="Tunisia">Tunisia</option>
+                                        <option value="Turkey">Turkey</option>
+                                        <option value="Turkmenistan">Turkmenistan</option>
+                                        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                        <option value="Tuvalu">Tuvalu</option>
+                                        <option value="Uganda">Uganda</option>
+                                        <option value="Ukraine">Ukraine</option>
+                                        <option value="United Arab Emirates">United Arab Emirates</option>
+                                        <option value="United Kingdom">United Kingdom</option>
+                                        <option value="United States">United States</option>
+                                        <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                        <option value="Uruguay">Uruguay</option>
+                                        <option value="Uzbekistan">Uzbekistan</option>
+                                        <option value="Vanuatu">Vanuatu</option>
+                                        <option value="Venezuela">Venezuela</option>
+                                        <option value="Viet Nam">Viet Nam</option>
+                                        <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                        <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                        <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                        <option value="Western Sahara">Western Sahara</option>
+                                        <option value="Yemen">Yemen</option>
+                                        <option value="Zambia">Zambia</option>
+                                        <option value="Zimbabwe">Zimbabwe</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">Street Address</div>
+                                <div class="field__wrap"><input class="field__input" type="text" name="street-address" placeholder="Street address line 1"></div>
+                                <div class="field__wrap"><input class="field__input" type="text" name="street-address" placeholder="Street address line 2"></div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">Town/City</div>
+                                <div class="field__wrap"><input class="field__input" type="text" name="town/city" placeholder="Town/City"></div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">State/Country</div>
+                                <div class="field__wrap"><input class="field__input" type="text" name="state/country" placeholder="State/Country"></div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">Postcode/ZIP</div>
+                                <div class="field__wrap"><input class="field__input" type="text" name="postcode/zip" placeholder="Postcode/ZIP"></div>
+                            </div>
+                            <div class="login__field field">
+                                <div class="field__label">Phone</div>
+                                <div class="field__wrap">
+                                    <input id="phone" class="field__input" type="tel" name="phone" placeholder="Phone">
+                                </div>
+                            </div>
+
+                            <div class="login__row">
+                                <div class="login__col"><button class="login__btn btn btn_green btn_wide">Update</button></div>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+
+                <!-- address info end  -->
+
+                <!-- Shipping Info start -->
+                <div class="login__details">
+                    <div class="login__center center">
+                        <h2 class="login__title title title_mb-lg">Shipping details</h2>
+                        <form class="login__form">
+                            <div class="login__wrap">
+                                <div class="login__field field">
+                                    <div class="field__label">Full Name</div>
+                                    <div class="field__wrap"><input class="field__input" type="text" name="full-name" placeholder="Full Name"></div>
+                                </div>
+                                <div class="login__field field">
+                                    <div class="field__label">Street Name</div>
+                                    <div class="field__wrap"><input class="field__input" type="text" name="street-name" placeholder="Street Name"></div>
+                                </div>
+
+                                <div class="shipping__line">
+                                    <div class="shipping__cell">
+                                        <div class="shipping__field field">
+                                            <div class="field__label">House Number</div>
+                                            <div class="field__wrap"><input class="field__input" type="text" name="house" placeholder="House Number"></div>
+                                        </div>
+                                    </div>
+                                    <div class="shipping__cell">
+                                        <div class="shipping__field field">
+                                            <div class="field__label">City</div>
+                                            <div class="field__wrap"><input class="field__input" type="text" name="city" placeholder="City"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shipping__line">
+                                    <div class="shipping__cell">
+                                        <div class="shipping__field field">
+                                            <div class="field__label">Country</div>
+                                            <div class="field__wrap"><input class="field__input" type="text" name="country" placeholder="Country"></div>
+                                        </div>
+                                    </div>
+                                    <div class="shipping__cell">
+                                        <div class="shipping__field field">
+                                            <div class="field__label">ZIP Code</div>
+                                            <div class="field__wrap"><input class="field__input" type="text" name="code" placeholder="ZIP Code"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="login__row">
+                                    <div class="login__col"><button class="login__btn btn btn_green btn_wide">Update</button></div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Info End -->
+
+
+                    <!-- Billing Info start -->
+                    <div class="login__details">
+                        <div class="login__center center">
+                            <h2 class="login__title title title_mb-lg">Billing details</h2>
+                            <form class="login__form">
+                                <div class="login__wrap">
+                                    <div class="login__field field">
+                                        <div class="field__label">Full Name</div>
+                                        <div class="field__wrap"><input class="field__input" type="text" name="full-name" placeholder="Full Name"></div>
+                                    </div>
+                                    <div class="login__field field">
+                                        <div class="field__label">Street Name</div>
+                                        <div class="field__wrap"><input class="field__input" type="text" name="street-name" placeholder="Street Name"></div>
+                                    </div>
+
+                                    <div class="billing__line">
+                                        <div class="billing__cell">
+                                            <div class="billing__field field">
+                                                <div class="field__label">House Number</div>
+                                                <div class="field__wrap"><input class="field__input" type="text" name="house" placeholder="House Number"></div>
+                                            </div>
+                                        </div>
+                                        <div class="billing__cell">
+                                            <div class="billing__field field">
+                                                <div class="field__label">City</div>
+                                                <div class="field__wrap"><input class="field__input" type="text" name="city" placeholder="City"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="billing__line">
+                                        <div class="billing__cell">
+                                            <div class="billing__field field">
+                                                <div class="field__label">Country</div>
+                                                <div class="field__wrap"><input class="field__input" type="text" name="country" placeholder="Country"></div>
+                                            </div>
+                                        </div>
+                                        <div class="billing__cell">
+                                            <div class="billing__field field">
+                                                <div class="field__label">ZIP Code</div>
+                                                <div class="field__wrap"><input class="field__input" type="text" name="code" placeholder="ZIP Code"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="login__row">
+                                        <div class="login__col"><button class="login__btn btn btn_green btn_wide">Update</button></div>
+                                    </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <!-- footer Section -->
+                    <footer class="footer">
+                        <div class="footer__center center">
+                            <div class="footer__row">
+                                <div class="footer__col">
+                                    <a class="footer__logo" href="index">
+                                        <img class="footer__pic footer__pic_black-desktop" style="width: 150px;" src="cropped-logo-alha-alfa-cosmetics-2020-300x67.png" alt="">
+                                        <img class="footer__pic footer__pic_white-desktop" style="width: 150px;" src="" alt="">
+                                        <img class="footer__pic footer__pic_black-mobile" style="width: 150px;" src="cropped-logo-alha-alfa-cosmetics-2020-300x67.png" alt="">
+                                        <img class="footer__pic footer__pic_white-mobile" style="width: 150px;" src="" alt=""></a>
+                                    <div class="footer__copyright">© 2017-2021 - All rights reserved</div>
+                                    <div class="footer__social social">
+                                        <a class="social__link" href="https://www.instagram.com/alhaalfacosmetics_hq/" target="_blank">
+                                            <svg class="icon icon-instagram">
+                                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                </svg>
+                                        </a>
+
+                                        <a class="social__link" href="https://www.twitter.com/alhaalfaonline" target="_blank">
+                                            <svg class="icon icon-twitter">
+                                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                                </svg>
+                                        </a>
+                                        <a class="social__link" href="https://www.facebook.com/alhaalfacosmeticsHQ/" target="_blank">
+                                            <svg class="icon icon-facebook">
+                                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                                </svg>
+                                        </a>
+                                    </div><label class="switch js-switch-bg"><input class="switch__input" type="checkbox" /><span
+                                class="switch__in"><span class="switch__tick"><img class="switch__pic switch__pic_moon"
+                                        src="img/moon.svg" alt="" /><img class="switch__pic switch__pic_sun"
+                                        src="img/sun.svg" alt="" /></span></span></label>
+                                </div>
+                                <div class="footer__col">
+                                    <div class="footer__category">Alha Alfa Cosmetics</div>
+                                    <div class="footer__menu">
+                                        <a class="footer__link" href="category.html">Our Outlets</a>
+                                        <a class="footer__link" href="category.html">Our Stockist</a>
+                                        <a class="footer__link" href="category.html">Makeup Services</a>
+                                        <a class="footer__link" href="http://sg.alhaalfa.com">Singapore</a>
+                                        <a class="footer__link" href="http://br.alhaalfa.com">Brunei</a>
+                                        <a class="footer__link" href="http://id.alhaalfa.com">Indonesia</a>
+                                    </div>
+                                </div>
+                                <div class="footer__col">
+                                    <div class="footer__category">Legal</div>
+                                    <div class="footer__menu">
+                                        <a class="footer__link" href="legal-page.html">Terms of Service</a>
+                                        <a class="footer__link" href="legal-page.html">Privacy Policy</a>
+                                        <a class="footer__link" href="legal-page.html">Returns Policy</a>
+                                        <a class="footer__link" href="legal-page.html">Shipping</a>
+                                        <a class="footer__link" href="legal-page.html">Data Protection</a>
+                                    </div>
+                                </div>
+                                <div class="footer__col">
+                                    <div class="footer__category">Company</div>
+                                    <div class="footer__menu">
+                                        <a class="footer__link" href="about-us.html">About</a>
+                                        <a class="footer__link" href="faq.html">Faq</a>
+                                        <a class="footer__link" href="contacts.html">Contact</a>
+                                        <a class="footer__link" href="careers-page.html">Careers</a>
+                                        <a class="footer__link" href="#">Vision</a>
+                                        <a class="footer__link" href="#">Culture</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <!-- scripts-->
+                <script src="js/app.js"></script>
+                <script src="js/common.js"></script>
+
+                <script src="https://kit.fontawesome.com/f2cf70b549.js"></script>
+                <script src="https://use.fortawesome.com/349cfdf6.js"></script>
+
+
+                <script src="js/intlTelInput.js"></script>
+                <script>
+                    var input = document.querySelector("#phone");
+                    window.intlTelInput(input, {
+                        utilsScript: "build/js/utils.js"
+                    });
+                </script>
+</body>
+
+</html>
