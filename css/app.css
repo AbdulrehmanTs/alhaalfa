@@ -1171,6 +1171,14 @@ body.dark .menu__social .menu__link:hover .icon {
     fill: rgba(255, 255, 255, 0.75);
 }
 
+body.dark .user-popup-items {
+    color: white;
+}
+
+body.dark .user-popup-items:hover {
+    color: #00CC96;
+}
+
 .search {
     position: relative;
     width: 21px;
@@ -4731,6 +4739,10 @@ body.dark .work__item {
     color: black;
     display: flex;
     flex-direction: row;
+}
+
+.user-popup-items:hover {
+    color: #00CC96;
 }
 
 .fa-history,

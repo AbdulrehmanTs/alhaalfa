@@ -50,18 +50,25 @@
     <!-- page-->
     <div class="page">
         <header class="header js-header">
-            <div class="header__center center"><button class="header__burger js-header-burger"></button>
+            <div class="header__center center">
+                <button class="header__burger js-header-burger"></button>
                 <a class="header__logo" href="index.html">
                     <img class="header__pic header__pic_black-desktop" src="cropped-logo-alha-alfa-cosmetics-2020-300x67.png" alt="">
                     <img class="header__pic header__pic_white-desktop" src="" alt="">
                     <img class="header__pic header__pic_black-mobile" src="cropped-logo-alha-alfa-cosmetics-2020-300x67.png" alt="" style="width: 200px;">
-                    <img class="header__pic header__pic_white-mobile" src="" alt="" style="width: 200px;"></a>
+                    <img class="header__pic header__pic_white-mobile" src="" alt="" style="width: 200px;">
+                </a>
                 <div class="header__control">
                     <div class="header__item header__item_hidden">
                         <div class="header__search search js-search">
-                            <div class="search__wrap"><input class="search__input" type="text" placeholder="Find something here"></div><button class="search__btn js-search-btn"><svg class="icon icon-search">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg></button>
+                            <div class="search__wrap">
+                                <input class="search__input" type="text" placeholder="Find something here">
+                            </div>
+                            <button class="search__btn js-search-btn">
+                                <svg class="icon icon-search">
+                                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                     <div class="header__item"><a class="header__link header__link_cart active" href="cart.html"><svg class="icon icon-cart">
@@ -117,11 +124,59 @@
                         </div>
 
                     </div>
-                    <div class="header__item header__item_hidden"><a class="header__link" href="login.html"><svg class="icon icon-user">
-                  <use xlink:href="img/sprite.svg#icon-user"></use>
-                </svg></a></div>
+                    <div class="header__item header__item_hidden">
+                        <a class="header__link" href="login.html">
+                            <svg class="icon icon-user">
+                                <use xlink:href="img/sprite.svg#icon-user"></use>
+                            </svg>
+                        </a>
+
+                        <!-- <div class="header__body">
+                            <div class="basket basket_header">
+                                <div class="basket__total" style="margin-bottom: 0px;">
+                                    <div class="basket__text">
+                                        <p style="margin-bottom: 10px;">You are currently not logged in:</p>
+                                        <div class="login__row">
+                                            <div class="login__col"><a href="sign-up.html"><button class="login__btn btn btn_green btn_wide">Create Account</button></a></div>
+                                            <p>OR</p>
+                                            <div class="login__col"><a class="login__btn btn btn_border btn_wide" href="login.html">Login</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="header__body">
+                            <div class="basket basket_header">
+                                <div class="basket__total" style="margin-bottom: 0px;">
+                                    <div class="basket__text">
+
+                                        <a class="user-popup-items" href="address-info.html">
+                                            <img src="product-1.png" alt="logo" width="40em" height="40em">
+                                            <p style="margin-bottom: 10px;">User Name <span class="user_pending">pending</span></p>
+                                        </a>
+
+                                        <a class="user-popup-items active" href="order-history.html">
+                                            <p><i class="fas fa-history"></i> Order history</p>
+                                        </a>
+
+                                        <a class="user-popup-items" href="address-info.html">
+                                            <i class="fas fa-save"></i>
+                                            <p style="margin-bottom: 10px;">RMO</p>
+                                        </a>
+
+                                        <a class="user-popup-items" href="order-history.html">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <p style="margin-bottom: 10px;">LOG OUT</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="header__menu menu js-menu">
                 <div class="menu__center center">
                     <form class="menu__search search">
