@@ -91,6 +91,27 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track-piece {
+    background-color: #F6F7FB;
+    border-radius: 0;
+}
+
+html::-webkit-scrollbar-thumb:vertical {
+    width: 5px;
+    background-color: rgba(26, 32, 44, 0.1);
+    border-radius: 0;
+}
+
+html::-webkit-scrollbar-thumb:horizontal,
+html::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgba(26, 32, 44, 0.1);
+    border-radius: 0;
+}
+
 img,
 fieldset,
 a img {
