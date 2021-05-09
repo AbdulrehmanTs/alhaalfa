@@ -53,6 +53,52 @@
     width: 20%;
 }
 
+.pagination_section {
+    display: flex;
+}
+
+.pagination_col {
+    width: 33.33%;
+}
+
+.pagination_btn {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: black;
+    text-decoration: none;
+}
+
+.pagination_btn:hover {
+    background-color: #ececec;
+}
+
+.active_btn {
+    border: 2px solid #00cc96;
+}
+
+.pages_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages_btn h3 {
+    padding-right: 30px;
+}
+
+.text_next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
     .order__history_container {
         display: flex;
