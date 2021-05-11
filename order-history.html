@@ -251,44 +251,54 @@
             <div class="order-history__stage stage">- Order History</div>
             <h2 class="order-history__title title title_mb-lg">Your Order History</h2>
             <div class="order__history_container">
-
-                <div class="order_title_row">
-                    <div class="index-number col">#</div>
-                    <div class="order_title col">Order Name</div>
-                    <div class="order_title col">Order Amount</div>
-                    <div class="order_title col">Order Date</div>
-                    <div class="order_title col">Payment Status</div>
-                    <div class="order_title col">Order Status</div>
-                    <div class="order_title col">Invoivce</div>
-
-                </div>
-
-                <div onclick="window.location='order-details.html';" class="order_item_row">
-                    <div class="index-number col">1</div>
-                    <div class="col">Test Product</div>
-                    <div class="col">PM 60.00 for 2 items</div>
-                    <div class="col">6/3/2021</div>
-                    <div class="col">paid</div>
-                    <div class="col">shipped</div>
-                    <div class="col">
-                        <a class="invoice-btn" href="invoice.html">Download</a>
-                    </div>
-                </div>
-
-
-                <div onclick="window.location='order-details.html';" class="last-item order_item_row ">
-                    <div class="index-number col ">2</div>
-                    <div class="col ">Test Product</div>
-                    <div class="col ">PM 60.00 for 2 items</div>
-                    <div class="col ">6/3/2021</div>
-                    <div class="col ">not-paid</div>
-                    <div class="col ">not-shipped</div>
-                    <div class="col">
-                        <a href="invoice.html">
-                            <p class="invoice-btn">Download</p>
-                        </a>
-                    </div>
-                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                            <th>Payment Status</th>
+                            <th>Actions</th>
+                            <th>Invoice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="#">1</td>
+                            <td data-label="Date">6/3/2021</td>
+                            <td data-label="Status">To be shipped</td>
+                            <td data-label="Total">PM 60.00 for 2 items</td>
+                            <td data-label="Payment Status">Paid</td>
+                            <td data-label="Actions">View</td>
+                            <td data-label="Invoice">
+                                <a class="down_btn" href="invoice.html"><i class="fas fa-download"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">2</td>
+                            <td data-label="Date">7/3/2021</td>
+                            <td data-label="Status">To be shipped</td>
+                            <td data-label="Total">PM 60.00 for 2 items</td>
+                            <td data-label="Payment Status">Paid</td>
+                            <td data-label="Actions">View</td>
+                            <td data-label="Invoice">
+                                <a class="down_btn" href="invoice.html"><i class="fas fa-download"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="#">3</td>
+                            <td data-label="Date">8/3/2021</td>
+                            <td data-label="Status">To be shipped</td>
+                            <td data-label="Total">PM 60.00 for 2 items</td>
+                            <td data-label="Payment Status">Paid</td>
+                            <td data-label="Actions">View</td>
+                            <td data-label="Invoice">
+                                <a class="down_btn" href="invoice.html"><i class="fas fa-download"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
             </div>
 
