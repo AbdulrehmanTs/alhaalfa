@@ -31,6 +31,12 @@
     color: #00cc96;
 }
 
+.view_btn {
+    font-weight: bold;
+    text-decoration: none;
+    color: #00cc96;
+}
+
 .pagination_section {
     display: flex;
 }
